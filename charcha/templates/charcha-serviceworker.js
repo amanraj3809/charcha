@@ -1,8 +1,10 @@
 // offline support for charcha
 
 var cacheName = 'charcha';
-var filesToCache = [];
-''
+var filesToCache = [
+'/'
+];
+
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
