@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^', include('charcha.discussions.urls')),
     url(r'^', include('charcha.pushpa.urls')),
     url(r'^', include('django.contrib.auth.urls')),
+    url(r'^charcha-serviceworker(.*.js)$', views.charcha_serviceworker, name='charcha_serviceworker'),
 ]
 
