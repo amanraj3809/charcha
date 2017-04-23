@@ -72,3 +72,22 @@ $('.vote-button').click(function(){
             }
         });
 });
+
+function registerServiceWorker(serviceWorkerPath){
+  //function onPageLoad() {
+    console.log('IN');
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker
+        .register(serviceWorkerPath)
+          .then(
+            function(reg){
+              console.log('charcha service worker registered');
+            }
+          );
+    }
+  //}
+
+}
+
+var serviceWorkerPath = "/static/charcha-serviceworker.js";
+var charchaServiceWorker = registerServiceWorker(serviceWorkerPath);
