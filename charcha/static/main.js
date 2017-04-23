@@ -89,5 +89,5 @@ function registerServiceWorker(serviceWorkerPath){
 
 }
 
-var serviceWorkerPath = "/static/charcha-serviceworker.js";
+var serviceWorkerPath = "/charcha-serviceworker.js";
 var charchaServiceWorker = registerServiceWorker(serviceWorkerPath);
