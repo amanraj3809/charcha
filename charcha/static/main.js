@@ -74,7 +74,6 @@ $('.vote-button').click(function(){
 });
 
 function registerServiceWorker(serviceWorkerPath){
-  //function onPageLoad() {
     console.log('IN');
     if('serviceWorker' in navigator){
       navigator.serviceWorker
@@ -85,8 +84,6 @@ function registerServiceWorker(serviceWorkerPath){
             }
           );
     }
-  //}
-
 }
 
 var serviceWorkerPath = "/charcha-serviceworker.js";
