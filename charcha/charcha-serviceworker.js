@@ -7,7 +7,7 @@ var filesToCache = [
 '/static/main.js',
 '/static/pushpa.js',
 '/manifest.json',
-'/discuss/'.concat(getURLParameter(window.location.href)).concat('/'),
+'/discuss/1/',
 ]
 ;
 self.addEventListener('install', function(e) {
@@ -45,9 +45,7 @@ self.addEventListener('fetch', function(e) {
   );
 });
 
-function getURLParameter(url) {
-  array = url.split('/');
-  result = array[array.length - 2];
-  return result;
-}
+
+
+
 
